@@ -1,0 +1,17 @@
+body {
+    font-family: 'Rammetto One', cursive;
+
+
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://media.giphy.com/media/45odX3D5wNaEg/giphy.gif);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+}
+
+.container {
+   
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://media.giphy.com/media/45odX3D5wNaEg/giphy.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
