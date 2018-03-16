@@ -16,14 +16,12 @@
     
         
         var userGuess = String.fromCharCode(event.which).toLowerCase();
-    
        
         if (guessesSoFar.indexOf(userGuess) < 0 && Letters.indexOf(userGuess) >= 0) {
             guessesSoFar[guessesSoFar.length]=userGuess;
             guessesLeft--;
         }
-    
-       
+
         if (letterToBeGuessed === userGuess) {
             wins++;
             guessesLeft = 9;
@@ -31,7 +29,6 @@
             letterToBeGuessed = Letters[Math.floor(Math.random() * Letters.length)];
         }
     
-        
         if (guessesLeft === 0) {
             losses++;
             guessesLeft = 9;
@@ -41,14 +38,20 @@
 
         if (losses === 5) {
             alert("game over");
-         
+            location.reload()
         }
 
 
         if (wins === 3) {
             alert("you win!!");
-            
+            location.reload()
         }
+
+        
+
+       
+
+        
     
        
         var html = "<p><h1>The Psychic Game</h1></p>" + 
